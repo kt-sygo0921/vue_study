@@ -27,10 +27,16 @@
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
+
+    <example1-element data-hoge="lit-htmlだよ"></example1-element>
+    <example2-element text='lit-elementだよ'></example2-element>
   </div>
 </template>
 
 <script>
+import './example1.js';
+import './example2.js';
+
 export default {
   name: 'HelloWorld',
   props: {
@@ -41,6 +47,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.hoge {
+  background: blue;
+}
 h3 {
   margin: 40px 0 0;
 }
