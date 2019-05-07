@@ -95,4 +95,4 @@ class Example2 extends LitElement {
     }
 }
 
-customElements.define('example2-element', Example2)
+customElements.define('exampleVue2-element', Example2)

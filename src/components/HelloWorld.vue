@@ -28,8 +28,8 @@
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
 
-    <example1-element data-hoge="lit-htmlだよ"></example1-element>
-    <example2-element text='lit-elementだよ'></example2-element>
+    <exampleVue1-element data-hoge="lit-htmlだよ"></exampleVue1-element>
+    <exampleVue2-element text='lit-elementだよ'></exampleVue2-element>
   </div>
 </template>
 

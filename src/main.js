@@ -1,11 +1,31 @@
+import { LitElement} from 'lit-element';
 import Vue from 'vue'
 import App from './App.vue'
 
-Vue.config.productionTip = false
+import vueCustomElement from 'vue-custom-element';
+Vue.use(vueCustomElement);
 
-export default new Vue({
-  render: h => (
-    h(App)
-  ),
-}).$mount('#app')
+// export default new Vue({
+//   render: h => (
+//     h(App)
+//   ),
+// }).$mount('#app')
 
+export default class VueApp extends LitElement {
+  constructor() {
+    super()
+  }
+  connectedCallback() {
+    this.render();
+  }
+
+  render() {
+    new Vue({
+        render: h => (
+          h(App)
+        ),
+      }).$mount(this)
+  }
+}
+
+window.customElements.define('vue-element', VueApp);

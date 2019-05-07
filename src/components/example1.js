@@ -27,4 +27,4 @@ class Example1 extends HTMLElement {
     }
 }
 
-customElements.define('example1-element', Example1)
+customElements.define('exampleVue1-element', Example1)
