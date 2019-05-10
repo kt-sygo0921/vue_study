@@ -36,7 +36,6 @@ class Example2 extends LitElement {
         this.text2 = '';
     }
     firstUpdated(changeProperties) {
-        console.log(changeProperties)
         let event = new CustomEvent('my-event', {
             detail: {
                 message: 'メッセージ'
@@ -53,7 +52,6 @@ class Example2 extends LitElement {
     connectedCallback() {
         super.connectedCallback();
         window.addEventListener('my-event', e => {
-            console.log(e)
             // console.log(e.target.detail.message)
             console.log('コンポーネントに登録しカスタムイベントだよ')
         })
@@ -95,4 +93,4 @@ class Example2 extends LitElement {
     }
 }
 
-customElements.define('exampleVue2-element', Example2)
+customElements.define('examplevue2-element', Example2)

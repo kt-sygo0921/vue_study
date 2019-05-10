@@ -11,10 +11,11 @@
     "@vue/web-component-wrapper": "^1.2.0",
     "axios": "^0.18.0",
     "core-js": "^2.6.5",
-    "lit-element": "^2.1.0",
+    "lit-element": "^2.0.0",
     "lit-html": "^1.0.0",
     "vue": "^2.6.10",
-    "vue-custom-element": "^3.2.6"
+    "vue-custom-element": "^3.2.6",
+    "vue-router": "^3.0.6"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.6.0",

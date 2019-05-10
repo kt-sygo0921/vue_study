@@ -1,6 +1,7 @@
 import { LitElement} from 'lit-element';
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from 'vue';
+
+import App from './App.vue';
 
 import vueCustomElement from 'vue-custom-element';
 Vue.use(vueCustomElement);
@@ -11,12 +12,9 @@ Vue.use(vueCustomElement);
 //   ),
 // }).$mount('#app')
 
-export default class VueApp extends LitElement {
+class VueApp extends LitElement {
   constructor() {
     super()
-  }
-  connectedCallback() {
-    this.render();
   }
 
   render() {
